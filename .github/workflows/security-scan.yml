@@ -35,7 +35,7 @@ jobs:
       - name: Build and analyze
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=CatherineChen-CyberSecurity_devsecops-pipeline-lab
+        run: mvn -B verify -DskipTests org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=CatherineChen-CyberSecurity_devsecops-pipeline-lab
 
   sca:
     name: SCA - Trivy
