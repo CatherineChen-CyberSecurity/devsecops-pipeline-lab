@@ -1,0 +1,17 @@
+# Python virtual environment
+.venv/
+venv/
+__pycache__/
+
+# Java
+app/target/
+*.class
+*.jar
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
